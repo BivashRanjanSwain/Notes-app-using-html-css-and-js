@@ -1,0 +1,205 @@
+:root {
+  --bg-color: #f0f0f0;
+  --text-color: #979090;
+  --primary-color: #4CAF50;
+  --secondary-color: #45a049;
+  --note-bg: #fff;
+  --note-border: #ddd;
+  --input-bg: #fff;
+}
+
+.dark-mode {
+  --bg-color: #333;
+  --text-color: #f0f0f0;
+  --primary-color: #45a049;
+  --secondary-color: #4CAF50;
+  --note-bg: #444;
+  --note-border: #555;
+  --input-bg: #555;
+}
+
+body {
+  background-image: url('https://i.ibb.co/zHwvXR0/Leonardo-Phoenix-Create-a-stunning-artistic-image-with-a-vibra-3.jpg');
+  font-family: Arial, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.Developer h4{
+  font-size: 1.1rem;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  font-weight: 700;
+}
+
+.Developer h1{
+  position: absolute;
+  left: 10rem;
+  top: .6rem;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#login-signup, #notes-app {
+  background-color: var(--note-bg);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#login-signup {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+input[type="text"], input[type="password"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--note-border);
+  border-radius: 3px;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  box-sizing: border-box;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #111;
+}
+
+#notes-list {
+  margin-top: 20px;
+}
+
+.note {
+  background-color: var(--note-bg);
+  border: 1px solid var(--note-border);
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.note {
+  background-color: var(--note-bg);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word; /* Ensure text wraps within the note */
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.note-date {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.note-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.note-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.note-actions button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+#mode-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+#note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#note-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#search-bar {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
